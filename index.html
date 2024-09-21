@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Lover</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <i class="fa-regular fa-clock"> Open hour: 10 am - 11pm</i>      
+            <i class="fa-solid fa-phone-volume"> +00 123 456 7890 </i>
+            <i class="fa-solid fa-envelope">support@example.com</i>     
+        </div>
+        <nav>
+            <div class="logo">Food Lover</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li> 
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Taste the flavours of </h1>
+            <h2>SOUTH INDIA</h2>
+                
+            <p>Order from a weekly menu of tasty meals at the click of a button. 
+                <br>Say goodbye to meal planning and grocery shopping!</p>
+            <div class="buttons">
+                <a href="#" class="btn book-table">Book Table</a>
+                <a href="#" class="btn menu-btn">Our Menu</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/south-ind-01.png" width="600px" height="900px" alt="South Indian Food">
+        </div>
+    </section>
+
+
+<!-------------------------------------About SEction { 02 } ---------------------------------->
+
+
+<section class="about-section">
+    <div class="about-content">
+        
+        <h3>About</h3>
+        <h2>FOOD LOVER</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sum ullamcorper, suscipit eros quis, pellentesque sapien. Sed ventis nisi a auris laoreet, at tincidunt lectus volutpat. Etiam semper ligula sollicitudin ante vehicula pellentesque sapien.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sum ullamcorper, suscipit eros quis, pellentesque sapien. Sed ventis nisi a auris laoreet, at tincidunt lectus volutpat. Etiam semper ligula sollicitudin ante vehicula pellentesque sapien.</p>
+        <a href="#" class="read-more">Read More &rarr;</a>
+    </div>
+    <div class="about-image">
+        <img src="images/thali.png" alt="South Indian Thali" />
+    </div>
+</section>
+
+
+
+<!--------------------------------------Menu Section-------------------------------------------->
+
+<section class="menu-section">
+    <div class="menu-header">
+        <img src="images/icon.png" width="100px" height="80px" alt="food logo">
+        <h4>Food Lover</h4>
+        <h2>RESTAURANT MENU</h2>
+    </div>
+    
+    <div class="menu-tabs">
+        <button class="tab active">All Dishes</button>
+        <button class="tab">Dinner</button>
+        <button class="tab">Lunch</button>
+        <button class="tab">Drinks</button>
+        <button class="tab">Starters</button>
+    </div>
+    
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="images/steak.jpg" alt="Steak">
+            <h3>Steak</h3>
+        </div>
+        <div class="menu-item">
+            <img src="images/kabab.jpg" alt="Kabab">
+            <h3>Kabab</h3>
+        </div>
+        <div class="menu-item">
+            <img src="images/KFC FRIED CHICKEN.jpeg" alt="Chicken">
+            <h3>Chicken</h3>
+        </div>
+    </div>
+</section>
+
+
+<!---------------------------------------- Special Dish -------------------------------------------->
+
+
+<section class="special-dish">
+    <h2>Deals Today</h2>
+    <h1>Today Special Dish</h1>
+
+    <div class="dish-container">
+        
+        <div class="dish-item">
+            <img src="images/malai.jpg" alt="Chicken Malai">
+            <h3>Chicken Malai</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum</p>
+            <p class="price">Starts at ₹569</p>
+        </div>
+
+      
+        <div class="dish-item">
+            <img src="images/kofta.jpg" alt="Aloo Kofta">
+            <h3>Aloo Kofta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum</p>
+            <p class="price">Starts at ₹549</p>
+        </div>
+
+       
+        <div class="dish-item">
+            <img src="images/noodles.jpg" alt="Hakka Noodles">
+            <h3>Hakka Noodles</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum</p>
+            <p class="price">Starts at ₹469</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!---------------------------------------Booking section ------------------------------------------->
+
+
+<section class="booking-section">
+    <div class="overlay"></div>
+    <div class="booking-form">
+        <h2>Book Your Table</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="date" required>
+            <textarea placeholder="Comments"></textarea>
+            <button type="submit">Book Now!</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-------------------------------------- special offers-------------------------------------------------->
+
+
+<section class="special-offers">
+    <div class="offers-left">
+        <h3>From the Menu</h3>
+        <h1>Special Offers</h1>
+
+        <div class="offer-item">
+            <div class="offer-content">
+                <img src="images/fish curry01.jpg" alt="Fish Curry">
+                <div class="offer-info">
+                    <h2>Fish Curry</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur Vesti ullamcorper.</p>
+                </div>
+            </div>
+            <div class="offer-price">
+                <span class="new-price">₹549</span>
+                <span class="old-price">₹899</span>
+            </div>
+        </div>
+
+        <div class="offer-item">
+            <div class="offer-content">
+                <img src="images/chicken-tikka.jpg" alt="Chicken Tikka">
+                <div class="offer-info">
+                    <h2>Chicken Tikka</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur Vesti ullamcorper.</p>
+                </div>
+            </div>
+            <div class="offer-price">
+                <span class="new-price">₹899</span>
+                <span class="old-price">₹1199</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="offers-right">
+        <div class="image-grid">
+            <img src="images/chicken011.jpg" alt="Dish 1">
+            <img src="images/prawns.jpg" alt="Dish 2">
+            <img src="images/fish fry.jpg" alt="Dish 3">
+            <img src="images/muttonn.jpg" alt="Dish 4">
+            <div class="icon"><img src="images/icon.png" alt="Logo Icon"></div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
