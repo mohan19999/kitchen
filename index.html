@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Lover</title>
+    <title>Food Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="food.css">
@@ -11,29 +11,38 @@
 <body>
     <header>
         <div class="header-bar">
-            <i class="fa-regular fa-clock"> Open hour: 10 am - 11pm</i>      
-            <i class="fa-solid fa-phone-volume"> +00 123 456 7890 </i>
-            <i class="fa-solid fa-envelope">support@example.com</i>     
-        </div>
-        <nav>
-            <div class="logo">Food Lover</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Menu</a></li> 
-                <li><a href="#">Reservation</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="info-icons">
+                <i class="fa-regular fa-clock"><span class="h-txt">Open hour: 10 am - 11 pm </span>  </i>
+                <i class="fa-solid fa-phone-volume"> <span class="h-txt">+00 123 456 7890 </span></i>
+                <i class="fa-solid fa-envelope"> <span class="h-txt">support@example.com </span></i>
+            </div>
+            
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
+        </div>
+        
+
+
+        <nav>
+            <div class="logo"><img src="images/icon.png" alt="logo"></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li> 
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            
         </nav>
     </header>
 
-    <section class="hero">
+
+<!--------------------------------------hero section----------------------------------------->
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>Taste the flavours of </h1>
             <h2>SOUTH INDIA</h2>
@@ -54,7 +63,7 @@
 <!-------------------------------------About SEction { 02 } ---------------------------------->
 
 
-<section class="about-section">
+<section class="about-section" id="about">
     <div class="about-content">
         
         <h3>About</h3>
@@ -72,7 +81,7 @@
 
 <!--------------------------------------Menu Section-------------------------------------------->
 
-<section class="menu-section">
+<section class="menu-section" id="menu">
     <div class="menu-header">
         <img src="images/icon.png" width="100px" height="80px" alt="food logo">
         <h4>Food Lover</h4>
@@ -156,10 +165,6 @@
         </form>
     </div>
 </section>
-
-
-
-
 
 
 
@@ -273,11 +278,13 @@
         </div>
 
         <div class="circle-item">
+
             <div class="circle01">
                 <h1>190+</h1>
             </div>
             <p>Daily Customers</p>
         </div>
+
     </div>
 
 

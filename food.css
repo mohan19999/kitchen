@@ -10,33 +10,80 @@ body {
     color: white;
 }
 
-
-.fa-clock {
-    color: orange;
-    letter-spacing: 2px;
-    
-}
-
-.fa-solid {
-    color: orange;
-    letter-spacing: 2px;
-  
+html {
+    scroll-behavior: smooth;
 }
 
 .header-bar {
-    background-color: black;
-    color: white;
     display: flex;
-    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; 
+    color: white;
+    font-size: 12px; 
+}
+
+.h-txt{
+    color: white;
+}
+.info-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.info-icons i {
+    color: orange;
+    
     
 }
 
-.header-bar i{
-    margin-left: 25px;
-    font-size: 10px;
-  
-  
+.info-icons i::before {
+    margin-right: 5px;
 }
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.social-icons a {
+    color: white; 
+    font-size: 18px; 
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #F29A33; 
+}
+
+@media (max-width: 768px) {
+    .header-bar {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .info-icons {
+        flex-direction: column;
+        align-items: flex-start; 
+        text-align: left;
+        gap: 5px;
+    }
+
+    .social-icons {
+        justify-content: flex-end; 
+        flex-direction: row;
+    }
+
+    .info-icons i {
+        font-size: 14px; 
+    }
+}
+
 
 
 
@@ -48,10 +95,12 @@ nav {
     background-color: #1a1a1a;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
+.logo img{
+             width: 80px;
+             height: 80px;
+             background-color: white;
+             border-radius: 60%;
+    
 }
 
 nav ul {
@@ -67,10 +116,7 @@ nav ul li a {
     font-weight: 500;
 }
 
-.social-icons a {
-    color: white;
-    margin-left: 10px;
-}
+
 
 .hero {
     display: flex;
@@ -285,6 +331,7 @@ nav ul li a {
     line-height: 1.6;
     margin-bottom: 15px;
     color: black;
+    text-align: justify;
 }
 
 .read-more {
@@ -297,7 +344,7 @@ nav ul li a {
 }
 
 .about-image {
-    flex: 1;
+   
     position: relative;
     
 }
@@ -308,6 +355,7 @@ nav ul li a {
     height: auto;
     border: 10px solid #d4a476;
     background-color: #f5e1d0;
+    
 }
 
 @media (max-width: 768px) {
@@ -341,11 +389,14 @@ nav ul li a {
     border: 1px solid #ddd;
 }
 
+
+
 .menu-header h4 {
     color: #F29A33;
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 
 .menu-header h2 {
     font-size: 36px;
@@ -358,19 +409,21 @@ nav ul li a {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .tab {
     background-color: #ddd;
     border: none;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 5px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     color: #333;
     border-radius: 5px;
 }
+
 
 .tab.active {
     background-color: #F29A33;
@@ -380,13 +433,17 @@ nav ul li a {
 .menu-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
+
 
 .menu-item {
     text-align: center;
     width: 250px;
 }
+
+
 
 .menu-item img {
     width: 100%;
@@ -395,20 +452,45 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
+
 .menu-item h3 {
     font-size: 18px;
     font-weight: bold;
     color: #F29A33;
 }
 
+
+
 @media (max-width: 768px) {
-    .menu-items {
-        flex-direction: column;
-        align-items: center;
+    .menu-header h2 {
+        font-size: 28px;
     }
-    
+
     .menu-item {
-        width: 80%;
+        width: 200px;
+    }
+
+    .menu-item img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-header h2 {
+        font-size: 24px;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu-item img {
+        height: 200px;
+    }
+
+    .tab {
+        padding: 8px 15px;
+        font-size: 14px;
     }
 }
 
@@ -583,14 +665,14 @@ nav ul li a {
 
 /*-------------------------------special offers---------------------------------------*/
 
-
 .special-offers {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    height: 600px;
+    height: auto;
     margin: 0 auto;
     background-color: white;
+    flex-wrap: wrap; 
 }
 
 .offers-left {
@@ -670,7 +752,6 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .image-grid {
@@ -684,11 +765,10 @@ nav ul li a {
 
 .image-grid img {
     width: 200px;
-   height: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
-
 
 .icon {
     position: absolute;
@@ -708,22 +788,133 @@ nav ul li a {
     height: 40px;
 }
 
+
 @media (max-width: 768px) {
     .special-offers {
         flex-direction: column;
-        align-items: center;
+        padding: 30px;
+        height: auto;
     }
 
     .offers-left {
-        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .offer-content img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .offer-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .offer-price .new-price {
+        font-size: 1.3rem;
+    }
+
+    .offer-price .old-price {
+        font-size: 0.9rem;
     }
 
     .image-grid {
-        width: 100%;
-        height: auto;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .image-grid img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .icon {
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon img {
+        width: 30px;
+        height: 30px;
     }
 }
+
+
+@media (max-width: 480px) {
+    .special-offers {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .offers-left h1 {
+        font-size: 2rem;
+    }
+
+    .offers-left h3 {
+        font-size: 1rem;
+    }
+
+    .offer-item {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .offer-content img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .offer-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .offer-info p {
+        font-size: 0.8rem;
+    }
+
+    .offer-price {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .offer-price .new-price {
+        font-size: 1.2rem;
+    }
+
+    .offer-price .old-price {
+        font-size: 0.8rem;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .image-grid img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon {
+        top: 42%;
+        left: 42%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 
 
 
@@ -845,7 +1036,7 @@ nav ul li a {
 /*--------------------------------next section------------------------*/
 
 
-/* General Styling */
+
 .circles {
     background-color: white;
     display: flex;
@@ -855,7 +1046,7 @@ nav ul li a {
     color: black;
     text-align: center;
     padding: 50px 0;
-    height: auto; /* Adjust height for better responsiveness */
+    height: auto; 
 }
 
 .circle-item {
@@ -950,7 +1141,7 @@ nav ul li a {
     color: white;
 }
 
-/* Responsive adjustments for tablet and smaller screens */
+
 @media (max-width: 768px) {
     .circles {
         gap: 40px;
@@ -988,7 +1179,10 @@ nav ul li a {
     }
 }
 
-/* Responsive adjustments for mobile screens */
+
+
+
+
 @media (max-width: 480px) {
     .circles {
         flex-direction: column;
@@ -1156,7 +1350,7 @@ nav ul li a {
 
 
 
-/* For very small screens */
+
 @media (max-width: 480px) {
     .child01 img {
         width: 50px;
